@@ -39,7 +39,6 @@ Promise.resolve().then(async () => {
       update: { example_id: badInt },
     });
     console.log('Upsert #2 Succeeded!', badResult);
-    return record;
   } catch (err) {
     console.error('Upsert #2 Failed!\n', err);
   }
